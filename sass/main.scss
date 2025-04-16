@@ -1,0 +1,139 @@
+@forward "./reset";
+
+// *** Variables & Mixins ***
+$color-black: #000;
+$color-white: #fff;
+
+$color-dark: #222;
+
+@mixin flex-center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin dimension-settings(
+	$width: null,
+	$height: null,
+	$min-height: null,
+	$max-width: null
+) {
+	@if $width {
+		width: $width;
+	}
+	@if $height {
+		height: $height;
+	}
+	@if $min-height {
+		min-height: $min-height;
+	}
+	@if $max-width {
+		max-width: $max-width;
+	}
+}
+// *** End of Variables & Mixins ***
+
+// *** Main Styles ***
+// *** Body ***
+body {
+	background-color: $color-dark;
+	color: $color-white;
+
+	overflow-x: hidden;
+
+	font-size: 1.6rem;
+	font-family: Verdana, Geneva, sans-serif;
+
+	margin: 7rem 0 3rem 0;
+
+	@include dimension-settings(100vw, auto);
+	@include flex-center;
+}
+// *** End of Body ***
+
+// *** Overlay ***
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+
+	background-color: rgba($color-black, $alpha: 0.6);
+
+	@include dimension-settings(100%, 100%);
+	@include flex-center;
+}
+// *** End of Overlay ***
+
+// *** Javascript Class ***
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+// *** End of Javascript Class ***
+
+// *** Heading Primary & Span ***
+.heading__primary {
+	color: rgba($color-black, $alpha: 0.7);
+
+	text-align: center;
+	text-shadow: 0.2rem 0.2rem 0.3rem rgba($color-white, $alpha: 0.8);
+
+	span {
+		display: inline-block;
+
+		font-size: clamp(4.9rem, 7cqi, 8rem);
+		letter-spacing: -1.3rem;
+
+		@media (max-width: 500px) {
+			letter-spacing: -0.75rem;
+		}
+	}
+
+	span:nth-child(8) {
+		margin-right: 1.5rem;
+	}
+}
+// *** End of Heading Primary & Span ***
+
+// *** Main ***
+.main {
+	@include dimension-settings(100%, 100%, null, 144rem);
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 7rem;
+	@include flex-center;
+
+	// *** H2 & H3 & Ul & Li ***
+	h2 {
+		font-size: 6rem;
+
+		margin-bottom: -3rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	ul {
+		@include flex-center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	& li {
+		box-shadow: 0.2rem 0.2rem 3rem rgba($color-black, $alpha: 0.3);
+
+		padding: 0 3rem;
+
+		@include dimension-settings(25rem, 15rem);
+		@include flex-center;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	// *** End of  H2 & H3 & Ul & Li ***
+}
+// *** End of Main ***
+// *** End of Main Styles ***

@@ -1,0 +1,55 @@
+--- Moja Analyza---
+- Kazdy blok 
+- Rozdeluj a Panuj najlepsia stragegia
+- pisat aspon male poznamky na papier a precitat 50x aspon 🤣
+
+--- Uzivatelia systemu ---
+- Sefik Stavky:
+- Manazer
+- Uctovnicka
+- Hlavny Sefik
+
+- Sefik Stavky: Eviduje ludí, naradie,matros,vozidla 
+- dodatocna poznamka, z tychto styroch ludi musi evidovat klasicky Sefik Stavby podla mna ..
+
+- Manazer: sleduje priebeh projektov,terminov, statistiky
+
+- Uctovnicka: sleduje mzdu,faktury,vyplatne pasky, vydaje ( naklady )
+
+- Hlavny Sefik: Ten vie vsetko o vsetkom.
+
+--- Dochadzka a Zamestnanci ---
+- Zamestnanec: Meno, ID (ako ked si cipujete prichod s kartickou v firme ), hodinovka
+- Dochadzka: Kto prisiel, kedy kto odisiel, kto ma volno ( dovolenka,pnka, bars co ), kto meskal
+- Zamestnanec sa eviduje na dany projekt
+
+--- Projekty ---
+- Project: - meno, datum zaciatku a konca
+           - cas.plan a rozpocet ( peniazky )
+           - evidencia materialu ( spotreba a pozicanie )
+           - zoznam robotnikov
+           - suhrn: co sa spravilo, kolko stal dany projekt, cas ( termin )
+
+--- Sklady ---
+- Firma: mame viac skladov napr - Bratislava,Kosice, a Nitra samozrejme 🤣
+- Obsah skladu: Skrutky, Cement
+- evidencia materialu: pocet kusov, cena na jednotku
+- Sklady: Potrebujeme vediet kde co je ( aky matros ) a kolko
+
+--- Naradie ---
+- Evindencia naradia: vrtacky, zbijacky, kladifka a ine sady 
+- sledovanie kto si co a kedy pozical, ci vratil pripadne nevratil, ci to je v poriadku a pripadne zistit posledneho pouzivatela
+- Evidencia kategorie naradia ( historia ): na akom projekte je, kto ho pouziva a v sklade sa uz neukazuje velmi dolezite!
+ 
+--- Stavebne Vozidla ( mozno aj pretekarske ) ---
+- Evidencia aut: typ,znacka, v akom je stave,SPZ
+- Historia aut: - Kto ho mal pozicane a na aky projekt
+                - najezdene km ( zapisat ) -> naklady pri projekte
+                - fixna cena za palivo a amortizacia ( opotrebovanie auta, ci straca/nestraca hodnotu s opakovanym pouzivanim ).
+
+--- Komplet Suhrn Systemu ---
+- Finalny Ciel: automatizacia - prehlad, setrenie casu a nervov 🤣 a penazi. Komplexny system, ktory ulahci pracu ✌️
+
+ ************ Zaver ************
+- Písal som to na odľahčenie s trošku humorom, verím, že máte v práci veľa stresu, tak sa možno nad týmto pousmejete / zasmejete...
+- Ďakujem veľmi pekne, že ste si to prečítali! :)
